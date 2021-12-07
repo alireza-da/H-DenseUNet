@@ -1,0 +1,10 @@
+denseunet.pyc
+denseunet3d.pyc
+hybridnet.pyc
+loss.pyc
+net.pyc
+.env/
+.idea/workspace.xml
+livermask/
+model/
+PATIENT_DICOM/
