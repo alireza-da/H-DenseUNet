@@ -349,7 +349,7 @@ def dense_block(x, stage, nb_layers, nb_filter, growth_rate, dropout_rate=None, 
 
     for i in range(nb_layers):
         branch = i+1
-        x = conv_block(concat_feat, stage, branch, concat_feat.type_spec.shape[1], dropout_rate, weight_decay) # growth rate 4th element changed to concat_feat.type_spec.shape[1]
+        x = conv_block(concat_feat, stage, branch, growth_rate, dropout_rate, weight_decay) # growth rate 4th element changed to concat_feat.type_spec.shape[1]
         # print("\nChanged Growth Rate")
         concat_feat = concatenate([concat_feat, x], axis=concat_axis, name='concat_'+str(stage)+'_'+str(branch))
 
