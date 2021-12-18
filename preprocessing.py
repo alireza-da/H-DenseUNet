@@ -19,6 +19,7 @@ def proprecessing(image_path, save_folder):
         save(img, "./data/" + save_folder + file)
 
 
+
 def generate_livertxt(image_path, save_folder):
     if not os.path.exists("data/"+save_folder):
         os.mkdir("data/"+save_folder)
