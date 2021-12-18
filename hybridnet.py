@@ -4,7 +4,7 @@ from tensorflow.keras.layers import Input, ZeroPadding2D, concatenate, Lambda, Z
 from tensorflow.python.keras.layers.core import Dropout, Activation
 from tensorflow.python.keras.layers.convolutional import UpSampling2D, Conv2D, Conv3D, UpSampling3D, AveragePooling3D
 from tensorflow.python.keras.layers.pooling import AveragePooling2D, MaxPooling2D, MaxPooling3D
-from tensorflow.python.keras.layers.normalization import BatchNormalization
+from tensorflow.python.keras.layers import BatchNormalization
 from lib.custom_layers import Scale
 
 
